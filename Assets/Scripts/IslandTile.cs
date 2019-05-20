@@ -2,17 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class IslandTile : MonoBehaviour
+public class IslandTile : BaseInteractable
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+	public override void OnClick()
+	{
+		Debug.Log("CLicked on island");
+	}
 }
